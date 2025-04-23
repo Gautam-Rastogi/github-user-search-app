@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <h1 class="title">🔍 GitHub User Search</h1>
+  
+    <input
+      type="text"
+      [formControl]="searchControl"
+      class="search-input"
+      placeholder="Enter GitHub username"
+    />
+  
+    <div *ngIf="loading" class="loading">Loading...</div>
+    <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+  
+    <div *ngIf="userData" class="card">
+      <img [src]="userData.avatar_url" class="avatar" />
+      <div class="info">
+        <h2>{{ userData.name || userData.login }}</h2>
+        <p class="bio">{{ userData.bio || 'No bio available.' }}</p>
+        <div class="stats">
+          <span>👥 {{ userData.followers }} followers</span>
+          <span>🔁 {{ userData.following }} following</span>
+          <span>📦 {{ userData.public_repos }} repos</span>
+        </div>
+        <a class="profile-link" [href]="userData.html_url" target="_blank">View GitHub Profile</a>
+      </div>
+    </div>
+  </div>
+  

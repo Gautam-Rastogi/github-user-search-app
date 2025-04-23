@@ -1,0 +1,96 @@
+.wrapper {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background: #f7f9fc;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      border-color: #007acc;
+    }
+  }
+  
+  .loading {
+    color: #007acc;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .error {
+    color: #d90429;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #007acc;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .bio {
+    font-style: italic;
+    margin: 0.5rem 0 1.2rem;
+    color: #666;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .profile-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #007acc;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: #005f99;
+    }
+  }
+  
